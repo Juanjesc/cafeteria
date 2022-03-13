@@ -14,7 +14,9 @@
 
 
 - Todas las dependencias utilizadas para este proyecto:
--![image](https://user-images.githubusercontent.com/89318618/158082335-e7159b0e-2277-4d3c-a8d2-d76843fa8337.png)
+
+
+![image](https://user-images.githubusercontent.com/89318618/158082335-e7159b0e-2277-4d3c-a8d2-d76843fa8337.png)
 
 
 
