@@ -1,0 +1,42 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+.section-testimonios{
+    position: relative;
+    margin-top: -10rem;
+    background-color: v.$blanco;
+    padding: 5rem 2rem;
+    @include m.tablet { 
+        padding: 10rem;
+    }
+}
+.tarjeta{
+    background-color: v.$cafeClaro;
+    padding: 3rem;
+    max-width: 50rem;
+    border-radius: 20px;
+    margin: 0 auto;
+    
+
+    p{
+        font-weight: 400;
+        font-family: v.$fuente_principal;
+        line-height: 2;
+        font-size: 1.6rem;
+        
+       
+    }
+    .autor{
+        text-align: right;
+        margin-top: 4rem;
+        color: v.$primario;
+        font-size: 2.2rem;
+        
+    }
+    @include m.tablet { 
+        padding:4rem;
+        
+    }
+}
+

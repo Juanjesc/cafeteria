@@ -1,0 +1,26 @@
+@use 'variables' as v;
+//Mixins para los media queries
+
+@mixin movil {
+    @media (min-width: v.$movil){
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: v.$tablet){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktop){
+        @content;
+    }
+}
+
+// Mixins para GRID
+
+@mixin grid($columnas, $gap){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;
+}

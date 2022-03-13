@@ -1,0 +1,14 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.footer{
+    background-color: v.$primario;
+    
+
+    .copy{
+        text-align: center;
+        margin: 0;
+        padding: 3rem 0;
+        color: v.$blanco;
+    }
+}

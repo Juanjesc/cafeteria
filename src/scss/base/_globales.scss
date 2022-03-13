@@ -1,0 +1,75 @@
+@use 'variables' as v; //importamos y hacemos USO del archivo variables.scss
+//Y además tendrá un alias v
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: v.$fuente_principal; //hacemos uso de la variable del archivo variables.scss
+    background-color: v.$cafeClaro;
+}
+p{
+    color: v.$negro;
+    font-size: 2rem;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3{
+    margin: 0 0 v.$separacion 0;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h2{
+    text-align: center;
+    color: v.$primario;
+
+    &::after{
+        content: '';
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+        display: block;
+        background-image: url('../img/cafe.svg');
+        background-size: 10rem;
+    }
+    span{
+        color: v.$secundario;
+        display: block;
+        font-size: 2.5rem;
+    }
+}
+.heading-blanco{
+    @extend h2; //Hereda todos los atributos de H2
+    color: v.$blanco;
+    span{
+        color: v.$blanco;
+    }
+    &::after{
+        display: none;
+    }
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

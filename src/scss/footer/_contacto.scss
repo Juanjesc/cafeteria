@@ -1,0 +1,30 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+.grid-contacto{
+    
+    padding-bottom: 2rem;
+    @include m.tablet { 
+        @include m.grid(3, 4rem);
+        padding-bottom: 0;
+       
+    }
+    
+    
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    h3{
+        color: v.$secundario;
+        font-family: v.$fuente-terciaria;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-family: v.$fuente-terciaria;
+        margin: 1rem;
+    }
+}

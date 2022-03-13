@@ -1,0 +1,31 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.iconos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    gap: 2rem;
+    @include m.tablet { 
+        @include m.grid(3, 2rem) //Haciendo uso del mixin grid
+        //Tendrá 3 columnas (primer parámetro), con un gap de 2rem
+        
+    }
+    .icono{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 25%;
+        @include m.tablet { 
+            width: 40%;
+        }
+    }
+    p{
+        color: v.$primario;
+        font-size: 3rem;
+        font-weight: 4;
+        font-family: v.$fuente_terciaria;
+    }
+}
